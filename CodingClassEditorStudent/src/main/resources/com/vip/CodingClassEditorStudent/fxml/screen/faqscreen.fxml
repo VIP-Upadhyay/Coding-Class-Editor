@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="723.0" minWidth="1366.0" prefHeight="723.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vip.CodingClassEditorStudent.FaqController">
+   <children>
+      <ScrollPane layoutX="262.0" layoutY="67.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane>
+               <children>
+                  <Label styleClass="hnae" text="FAQ" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0" />
+                  <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+                     <children>
+                        <Label styleClass="pby" text="How To Instal C,C++ for CCE?">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <WebView fx:id="q1v" minHeight="-1.0" minWidth="-1.0" prefHeight="300.0" prefWidth="500.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </WebView>
+                        <Label styleClass="pby" text="How To Instal Python for CCE?">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <WebView fx:id="q2v" layoutX="15.0" layoutY="41.0" minHeight="-1.0" minWidth="-1.0" prefHeight="300.0" prefWidth="500.0" />
+                        <Label layoutX="162.0" layoutY="351.0" styleClass="pby" text="How To Instal JAVA for CCE?">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <WebView fx:id="q3v" layoutX="10.0" layoutY="372.0" minHeight="-1.0" minWidth="-1.0" prefHeight="300.0" prefWidth="500.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="subPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="224.0" minWidth="613.0" prefHeight="224.0" prefWidth="613.0" styleClass="spane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vip.CodingClassEditorTeacher.SubjectItemController">
+   <children>
+      <Label layoutX="52.0" layoutY="62.0" styleClass="slabel" text="Subject" />
+      <Label layoutX="52.0" layoutY="108.0" styleClass="slabel" text="Branch" />
+      <Label layoutX="52.0" layoutY="153.0" styleClass="slabel" text="Semester" />
+      <Label fx:id="subject" layoutX="197.0" layoutY="62.0" styleClass="slabel" text="sub data" />
+      <Label fx:id="branch" layoutX="197.0" layoutY="108.0" styleClass="slabel" text="bran data" />
+      <Label fx:id="semester" layoutX="197.0" layoutY="153.0" styleClass="slabel" text="sem data" />
+      <JFXButton fx:id="openBtnBtn" layoutX="527.0" layoutY="176.0" text="OPEN">
+         <styleClass>
+            <String fx:value="fonts-A" />
+            <String fx:value="button-B" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="delBtn" layoutX="558.0" layoutY="14.0" minHeight="40.0" minWidth="40.0" prefHeight="40.0" prefWidth="40.0">
+         <styleClass>
+            <String fx:value="hlabel" />
+            <String fx:value="lbtn" />
+         </styleClass>
+      </JFXButton>
+   </children>
+</Pane>

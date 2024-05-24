@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="practicalpane" minHeight="660.0" minWidth="1366.0" prefHeight="660.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vip.CodingClassEditorTeacher.AssignmentScreenController">
+   <children>
+      <Label fx:id="sbjprac" layoutX="38.0" layoutY="14.0" styleClass="headslab" text="Subjects Assignment" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="14.0" />
+      <JFXButton fx:id="addPracticals" layoutX="1269.0" layoutY="14.0" onAction="#onAddPractical" text="ADD" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="14.0">
+         <styleClass>
+            <String fx:value="fonts-A" />
+            <String fx:value="button-C" />
+         </styleClass>
+      </JFXButton>
+      <AnchorPane styleClass="spane" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Pane styleClass="stdpane" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="4.0" styleClass="stdtdata" text="SR No" />
+                  <Label layoutX="91.0" layoutY="4.0" styleClass="stdtdata" text="Assignment Name" />
+                  <Label layoutX="955.0" layoutY="4.0" styleClass="stdtdata" text="Date" />
+                  <Label layoutX="1228.0" layoutY="4.0" styleClass="stdtdata" text="Delete" />
+                  <Label layoutX="1048.0" layoutY="4.0" styleClass="stdtdata" text="Time" />
+                  <Label layoutX="1141.0" layoutY="4.0" styleClass="stdtdata" text="Open" />
+               </children>
+            </Pane>
+            <ScrollPane fx:id="pracscrlPane" hbarPolicy="NEVER" styleClass="scroll-cont" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="45.0">
+               <content>
+                  <AnchorPane styleClass="transparent">
+                     <children>
+                        <VBox fx:id="pracvbox" minWidth="1294.0" prefWidth="1294.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

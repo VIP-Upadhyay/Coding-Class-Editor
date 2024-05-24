@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vip.CodingClassEditorTeacher.EditorController">
+   <children>
+      <SplitPane dividerPositions="0.2126099706744868" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+        <items>
+          <AnchorPane fx:id="leftpane" minHeight="0.0" minWidth="0.0" prefHeight="618.0" prefWidth="379.0">
+               <children>
+                  <SplitPane dividerPositions="0.6704545454545454" orientation="VERTICAL" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="285.0" styleClass="stdlistback">
+                           <children>
+                              <ScrollPane fx:id="stbscrlPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                                <content>
+                                  <AnchorPane styleClass="stdlistback">
+                                       <children>
+                                          <VBox fx:id="stdvbox" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-285.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </ScrollPane>
+                              <Label layoutX="8.0" layoutY="6.0" styleClass="stdname" text="Student List" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="285.0" />
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.7142857142857143" orientation="VERTICAL" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <SplitPane dividerPositions="0.6016869728209935" layoutX="41.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="421.0" prefWidth="511.0">
+                                       <children>
+                                          <WebView fx:id="editor" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane>
+                                       <children>
+                                          <AnchorPane prefHeight="421.0" prefWidth="390.0" styleClass="msgpane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <AnchorPane layoutX="68.0" layoutY="48.0" prefHeight="45.0" styleClass="msgHeader" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <Label fx:id="receiver" layoutX="39.0" layoutY="18.0" text="Chat" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="12.0">
+                                                         <styleClass>
+                                                            <String fx:value="msgHeaderText" />
+                                                            <String fx:value="fonts-A" />
+                                                         </styleClass>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <ScrollPane fx:id="pmsgScrlPane" hbarPolicy="NEVER" layoutX="11.0" layoutY="24.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
+                                                   <content>
+                                                      <AnchorPane prefWidth="475.0">
+                                                         <children>
+                                                            <VBox fx:id="pmsgvbox" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </ScrollPane>
+                                                <AnchorPane layoutX="14.0" layoutY="401.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                   <children>
+                                                      <TextArea fx:id="pmsgTextArea" layoutX="-72.0" layoutY="-7.0" minHeight="40.0" minWidth="372.0" prefHeight="40.0" prefWidth="372.0" promptText="send message" styleClass="msgTextArea" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0" />
+                                                      <JFXButton fx:id="pmsgSend" layoutX="462.0" minHeight="40.0" minWidth="40.0" prefHeight="40.0" prefWidth="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                                                         <styleClass>
+                                                            <String fx:value="hlabel" />
+                                                            <String fx:value="lbtn" />
+                                                         </styleClass>
+                                                      </JFXButton>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane fx:id="terminalPane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <WebView fx:id="console" layoutX="143.0" layoutY="-20.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Pane prefHeight="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="praclab" layoutX="56.0" layoutY="-1.0" styleClass="logo-label" text="Hello" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

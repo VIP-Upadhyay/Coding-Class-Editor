@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Editor</title>
+  <style type="text/css" media="screen">
+    body {
+        overflow: hidden;
+    }
+
+    #editor {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="editor" >/*
+
+	Welcome To Coding Class Editor 
+	Please create a new file to code
+	or select already created file if any
+
+*/</div>
+
+<script src="js/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/eclipse");
+    editor.session.setMode("ace/mode/java");
+    editor.getSession().on('change', function() {
+		sendToJava();
+	});
+    function sendToJava() {
+		var s = editor.getSession().getValue();
+		
+		javaConnector.code(s);           
+    };
+    var jsConnector = {
+		showCode: function (code,language) {
+			editor.getSession().setValue(code);
+			changeLanguage(language);
+		},
+		sendCode: function(){
+			sendToJava();
+		}
+	};
+	function getJsConnector() {
+		return jsConnector;
+	};
+    function changeLanguage(language) {
+		if(language == 'c' || language == 'cpp')editor.session.setMode("ace/mode/c_cpp");
+	    else if(language == 'php')editor.session.setMode("ace/mode/php");
+	    else if(language == 'python')editor.session.setMode("ace/mode/python");
+	    else if(language == 'js')editor.session.setMode("ace/mode/javascript");
+	    else if(language == 'java')editor.session.setMode("ace/mode/java");
+	    else if(language === 'css')editor.session.setMode("ace/mode/css");
+	    else if(language === 'html')editor.session.setMode("ace/mode/html");
+	    else if(language === 'css')editor.session.setMode("ace/mode/css");
+	    else if(language === 'json')editor.session.setMode("ace/mode/json");
+	    else if(language === 'jsp')editor.session.setMode("ace/mode/jsp");
+	    else if(language === 'sql')editor.session.setMode("ace/mode/sql");
+	    else if(language === 'txt')editor.session.setMode("ace/mode/text");
+	    else if(language === 'xml')editor.session.setMode("ace/mode/xml");
+	    
+	}
+    
+            
+</script>
+
+</body>
+</html>

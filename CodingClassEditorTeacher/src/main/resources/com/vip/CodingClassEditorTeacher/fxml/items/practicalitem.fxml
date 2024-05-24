@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane prefWidth="1294.0" styleClass="stdpane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vip.CodingClassEditorTeacher.PracticalListController">
+   <children>
+      <Label fx:id="srNo" layoutX="14.0" layoutY="8.0" prefWidth="58.0" styleClass="stdtdata" text="1" />
+      <Label fx:id="practicalName" layoutX="91.0" layoutY="8.0" prefWidth="798.0" styleClass="stdtdata" text="Practical Name" />
+      <Label fx:id="practicalDate" layoutX="923.0" layoutY="8.0" prefWidth="99.0" styleClass="stdtdata" text="22/05/2022" />
+      <Label fx:id="time" layoutX="1038.0" layoutY="8.0" prefWidth="80.0" styleClass="stdtdata" text="1:30 min" />
+      <JFXButton fx:id="popenbtn" layoutX="1130.0" layoutY="7.0" prefHeight="14.0" prefWidth="80.0" text="OPEN">
+         <styleClass>
+            <String fx:value="pbtno" />
+            <String fx:value="fonts-A" />
+            <String fx:value="button-B" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="delBtn" layoutX="1238.0" layoutY="1.0" minHeight="40.0" minWidth="40.0" prefHeight="40.0" prefWidth="40.0">
+         <styleClass>
+            <String fx:value="hlabel" />
+            <String fx:value="lbtn" />
+         </styleClass>
+      </JFXButton>
+   </children>
+</Pane>

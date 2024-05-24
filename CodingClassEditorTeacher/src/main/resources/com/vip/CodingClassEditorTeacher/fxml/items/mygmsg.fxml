@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minWidth="375.0" prefWidth="375.0" styleClass="viten" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vip.CodingClassEditorTeacher.MGMController">
+   <children>
+      <VBox styleClass="gmsgpane" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <Label fx:id="name" layoutX="67.0" layoutY="4.0" styleClass="msgname" text="Sender Name" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <Label fx:id="msg" layoutX="-121.0" layoutY="3.0" prefWidth="325.0" styleClass="msg" text="This is the message box " AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <Label fx:id="date" layoutX="91.0" layoutY="-1.0" style="-fx-alignment: right;" styleClass="msgDate" text="9/04/2022 9:30" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

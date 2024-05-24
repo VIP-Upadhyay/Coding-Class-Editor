@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane styleClass="home" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vip.CodingClassEditorStudent.HomeController">
+   <children>
+      <Pane layoutX="742.0" layoutY="-154.0" maxHeight="1000.0" maxWidth="1000.0" prefHeight="1000.0" prefWidth="1000.0" styleClass="circle-pane" AnchorPane.rightAnchor="-276.0" AnchorPane.topAnchor="-250.0" />
+      <AnchorPane prefHeight="45.0" styleClass="menu-bars" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="abtbtn" minHeight="40.0" minWidth="40.0" onAction="#onAbt" prefHeight="40.0" prefWidth="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="550.0" AnchorPane.topAnchor="0.0">
+               <styleClass>
+                  <String fx:value="hlabel" />
+                  <String fx:value="lbtn" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="faqbtn" onAction="#onFAQ" text="FAQ" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="600.0" AnchorPane.topAnchor="0.0">
+               <styleClass>
+                  <String fx:value="lbtn" />
+                  <String fx:value="hlabel" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="msgbtn" minHeight="40.0" minWidth="40.0" onAction="#onMsg" prefHeight="40.0" prefWidth="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="0.0">
+               <styleClass>
+                  <String fx:value="hlabel" />
+                  <String fx:value="lbtn" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="profilebtn" minHeight="40.0" minWidth="40.0" onAction="#onProfile" prefHeight="40.0" prefWidth="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="125.0" AnchorPane.topAnchor="0.0">
+               <styleClass>
+                  <String fx:value="hlabel" />
+                  <String fx:value="lbtn" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="logoutbtn" onAction="#onLogout" text="Logout" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+               <styleClass>
+                  <String fx:value="lbtn" />
+                  <String fx:value="hlabel" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="homebtn" minHeight="40.0" minWidth="40.0" onAction="#onHome" prefHeight="40.0" prefWidth="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="0.0">
+               <styleClass>
+                  <String fx:value="hlabel" />
+                  <String fx:value="lbtn" />
+               </styleClass>
+            </JFXButton>
+            <Label styleClass="hlabel" text="Programming Class Editor" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="0.0" />
+            <Label styleClass="logo-label" text="&lt;/PCE&gt;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="maincontainer" styleClass="main-container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0" />
+      <Pane fx:id="msgPane" layoutX="359.0" layoutY="-433.0" prefHeight="433.0" prefWidth="420.0" styleClass="msgpane">
+         <children>
+            <Pane prefHeight="45.0" prefWidth="420.0" styleClass="msgHeader">
+               <children>
+                  <Label layoutX="8.0" layoutY="13.0" text="Global Chat">
+                     <styleClass>
+                        <String fx:value="msgHeaderText" />
+                        <String fx:value="fonts-A" />
+                     </styleClass>
+                  </Label>
+                  <JFXButton fx:id="msgclose" layoutX="369.0" layoutY="2.0" minHeight="40.0" minWidth="40.0" onAction="#onMsgCLose" prefHeight="40.0" prefWidth="40.0">
+                     <styleClass>
+                        <String fx:value="hlabel" />
+                        <String fx:value="lbtn" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <ScrollPane fx:id="msgScrlPane" hbarPolicy="NEVER" layoutY="45.0" prefHeight="347.0" prefWidth="420.0" vbarPolicy="ALWAYS">
+              <content>
+                <AnchorPane minWidth="0.0" prefWidth="420.0">
+                     <children>
+                        <VBox fx:id="msgvbox" prefHeight="0.0" prefWidth="405.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Pane layoutX="1.0" layoutY="392.0" prefHeight="40.0" prefWidth="420.0">
+               <children>
+                  <TextArea fx:id="msgTextArea" minHeight="40.0" minWidth="372.0" prefHeight="40.0" prefWidth="372.0" promptText="send message to globe" styleClass="msgTextArea" wrapText="true" />
+                  <JFXButton fx:id="msgSend" layoutX="375.0" minHeight="40.0" minWidth="40.0" onAction="#onMsgSend" prefHeight="40.0" prefWidth="40.0">
+                     <styleClass>
+                        <String fx:value="hlabel" />
+                        <String fx:value="lbtn" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

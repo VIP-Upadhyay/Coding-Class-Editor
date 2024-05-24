@@ -1,0 +1,93 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.background{
+	
+	-fx-background-color:red;
+}
+.left-background{
+	-fx-background-color:#FFEEEE;
+}
+.right-background{
+	-fx-background-color:#FF0000;
+}
+.center-background{
+	-fx-background-color:rgba(255, 255, 255, 0.71);
+	-fx-background-radius: 105;
+	-fx-border-radius: 105;
+}
+.temp-pane{
+}
+.fonts-A{
+	-fx-font-family: Arial;
+	-fx-font-style: normal;
+}
+.title-ls{
+	-fx-font-weight: bold;
+	-fx-font-size: 24px;
+}
+.forgot-ls{
+	-fx-font-size: 14px;
+}
+.create-new-ls{
+	-fx-font-weight: bold;
+	-fx-font-size: 18px;
+}
+.inputs-fields{
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+	-fx-background-color: #E9E0E0;
+	-fx-text-fill:#000000;
+	-fx-background-radius: 9;
+	-fx-border-radius: 9;
+}
+.error-input-fields{
+	-fx-border-color: #FF0000;
+	-fx-border-width: 2;
+}
+.button-A{
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+	-fx-background-color: #FF0000;
+	-fx-text-fill:#FFFFFF;
+	-fx-background-radius: 9;
+	-fx-border-radius: 9;
+	-fx-cursor: hand ;
+	-fx-opacity:1;
+}
+.button-B{
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+	-fx-border-color: #FF0000;
+	-fx-border-width: 2;
+	-fx-background-color: #FFFFFF;
+	-fx-background-radius: 9;
+	-fx-border-radius: 9;
+	-fx-cursor: hand ;
+}
+.img-background{
+	-fx-background-color:#FFFFFF;
+	-fx-opacity:0.7;
+	-fx-background-radius: 0 105 105 0;
+	-fx-border-radius: 105;
+}
+.error{
+	-fx-text-fill : #FF0000;
+	-fx-font-size: 14px;
+}
+
+.passwordEyeBtn{
+	-fx-background-color:transparent;
+	-fx-background-radius: 50;
+	-fx-border-radius: 50;
+	-fx-border-width: 2;
+	-fx-font-weight: bold;
+	-fx-cursor: hand ;
+}
+.progress-bar .track{
+	-fx-background-color:transparent;
+ 	-fx-background-insets: 0;
+}
+.progress-bar .bar{
+	-fx-background-color: linear-gradient(to right, #000000, #686868);
+}
+
+

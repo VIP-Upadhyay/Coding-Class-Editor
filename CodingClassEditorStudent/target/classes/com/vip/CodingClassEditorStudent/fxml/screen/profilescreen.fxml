@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vip.CodingClassEditorStudent.ProfileController">
+   <children>
+      <AnchorPane layoutX="734.0" layoutY="233.0" prefHeight="176.0" prefWidth="440.0" styleClass="slabel" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label layoutX="14.0" layoutY="31.0" text="Name" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="10.0" />
+            <Label layoutX="19.0" layoutY="89.0" text="Username" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="40.0" />
+            <Label layoutX="7.0" layoutY="100.0" text="Branch" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="100.0" />
+            <Label layoutX="4.0" layoutY="123.0" text="Semester" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="130.0" />
+            <Label layoutX="110.0" layoutY="78.0" text="Email" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="70.0" />
+            <Label fx:id="name" layoutX="139.0" layoutY="10.0" text="Name" AnchorPane.leftAnchor="139.0" AnchorPane.topAnchor="10.0" />
+            <Label fx:id="username" layoutX="139.0" layoutY="40.0" text="Name" AnchorPane.leftAnchor="139.0" AnchorPane.topAnchor="40.0" />
+            <Label fx:id="email" layoutX="139.0" layoutY="70.0" text="Name" AnchorPane.leftAnchor="139.0" AnchorPane.topAnchor="70.0" />
+            <Label fx:id="branch" layoutX="139.0" layoutY="100.0" text="Name" AnchorPane.leftAnchor="139.0" AnchorPane.topAnchor="100.0" />
+            <Label fx:id="semester" layoutX="139.0" layoutY="130.0" text="Name" AnchorPane.leftAnchor="139.0" AnchorPane.topAnchor="130.0" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="imgSliderPane" layoutX="760.0" layoutY="60.0" prefHeight="557.0" prefWidth="587.0" styleClass="img-background" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ImageView fx:id="imgView" fitHeight="455.0" fitWidth="469.0" layoutX="63.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

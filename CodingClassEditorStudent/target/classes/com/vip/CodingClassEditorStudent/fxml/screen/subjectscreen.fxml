@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="subjectpane" styleClass="headslab" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vip.CodingClassEditorStudent.SubjectController">
+   <children>
+      <Label layoutX="42.0" layoutY="25.0" styleClass="headsubdata" text="Subject" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="25.0" />
+      <Label fx:id="subject" layoutX="143.0" layoutY="25.0" styleClass="headsubdata" text="C" AnchorPane.topAnchor="25.0" />
+      <Label layoutX="42.0" layoutY="55.0" styleClass="headsubdata" text="Branch" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="55.0" />
+      <Label layoutX="42.0" layoutY="85.0" styleClass="headsubdata" text="Semester" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="85.0" />
+      <Label fx:id="branch" layoutX="143.0" layoutY="55.0" styleClass="headsubdata" text="Computer Science Engineering" AnchorPane.leftAnchor="143.0" AnchorPane.topAnchor="55.0" />
+      <Label fx:id="semester" layoutX="143.0" layoutY="85.0" styleClass="headsubdata" text="2nd Sem" AnchorPane.leftAnchor="143.0" AnchorPane.topAnchor="85.0" />
+      <Pane layoutX="28.0" layoutY="150.0" prefHeight="238.0" prefWidth="600.0" styleClass="spane" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <Label layoutX="218.0" layoutY="90.0" styleClass="headpadata" text="Practicals" />
+            <JFXButton fx:id="popenbtn" layoutX="514.0" layoutY="188.0" onAction="#onPracticalOpen" text="OPEN">
+               <styleClass>
+                  <String fx:value="fonts-A" />
+                  <String fx:value="button-B" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="707.0" layoutY="150.0" prefHeight="238.0" prefWidth="600.0" styleClass="spane" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <Label layoutX="188.0" layoutY="90.0" styleClass="headpadata" text="Assignments" />
+            <JFXButton fx:id="aopenbtn" layoutX="514.0" layoutY="188.0" onAction="#onAssignmentOpen" text="OPEN">
+               <styleClass>
+                  <String fx:value="fonts-A" />
+                  <String fx:value="button-B" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

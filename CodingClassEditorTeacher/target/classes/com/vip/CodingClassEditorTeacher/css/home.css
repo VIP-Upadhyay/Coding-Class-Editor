@@ -1,0 +1,215 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+@font-face {
+    font-family: Sansita;
+    src: url('fonts/Sansita-Regular.ttf');
+}
+.home{
+	-fx-background-color:#ffffff;
+}
+.menu-bars{
+	-fx-background-color:rgba(255,255,255,0.71);
+	-fx-border-color: #000000;
+	-fx-border-width: 1;
+}
+.circle-pane{
+	-fx-background-color:red;
+	-fx-background-radius: 20000;
+}
+.logo-label{
+	-fx-text-fill:rgba(143, 0, 255, 0.71);
+	-fx-font-size:30;
+	-fx-font-family:Sansita;
+}
+.hlabel{
+	-fx-font-size:22;
+	-fx-font-family:Arial;
+}
+.lbtn{
+	-fx-background-color:transparent;
+	-fx-cursor: hand ;
+}
+.scroll-pane{
+      	-fx-background: transparent; 
+	-fx-background-color: transparent; 
+}
+.headslab{
+	-fx-text-fill: black;
+	-fx-font-size:25;
+}
+.spane{
+	-fx-border-color: #000000;
+	-fx-border-width: 1;
+	-fx-background-color: rgba(255, 255, 255, 0.71);
+	-fx-background-radius:15;
+	-fx-border-radius: 15;
+}
+.vitem{
+	-fx-background-color: transparent; 
+}
+.slabel{
+	-fx-text-fill: black;
+	-fx-font-size:20;
+	-fx-font-family:Arial;
+}
+
+.dialog-pane{
+  	-fx-border-color:black;
+  	-fx-border-width:2.0px;
+ }
+
+/**Costumization of The Bar where the buttons are located**/
+.dialog-pane > .button-bar > .container {
+  	-fx-background-color:rgba(255, 255, 255, 0.71);
+}
+
+.dialog-pane > .content.label {
+	-fx-background-color:rgba(255, 255, 255, 0.71);
+   	-fx-padding: 0.5em 0.5em 0.5em 0.5em;
+   	-fx-text-fill:black;
+   	-fx-font-size:15.0px;
+}
+
+/**Costumization of Buttons**/
+
+.fonts-A{
+	-fx-font-family: Arial;
+	-fx-font-style: normal;
+}
+.button-A{
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+	-fx-background-color: #FF0000;
+	-fx-text-fill:#FFFFFF;
+	-fx-background-radius: 9;
+	-fx-border-radius: 9;
+	-fx-cursor: hand ;
+	-fx-opacity:1;
+}
+.button-B,.dialog-pane .button{
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+	-fx-border-color: #FF0000;
+	-fx-text-fill:#FF0000;
+	-fx-border-width: 2;
+	-fx-background-color: #FFFFFF;
+	-fx-background-radius: 9;
+	-fx-border-radius: 9;
+	-fx-cursor: hand ;
+}
+.button-C{
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+	-fx-border-color: #000000;
+	-fx-text-fill:#000000;
+	-fx-border-width: 2;
+	-fx-background-color: #FFFFFF;
+	-fx-background-radius: 9;
+	-fx-border-radius: 9;
+	-fx-cursor: hand ;
+}
+
+.img-background{
+	-fx-background-color: transparent;
+}
+.headsubdata{
+	-fx-text-fill: black;
+	-fx-font-size:20;
+}
+.headpadata{
+	-fx-text-fill: black;
+	-fx-font-size:40;
+}
+.stdpane{
+	-fx-background-color: #FFFFFF;
+	-fx-border-color: #000000;
+	-fx-border-width: 1;
+}
+.stdtdata{
+	-fx-text-fill: black;
+	-fx-font-size:18;
+}
+.pbtno{
+	-fx-font-size:14;
+}
+.msgpane{
+	-fx-background-color: #ece5dd;
+}
+.msgHeader{
+	-fx-background-color: red;
+	-fx-border-color: #FFFFFF;
+	-fx-border-width: 1;
+}
+.msgHeaderText{
+	-fx-text-fill: white;
+	-fx-font-size:16;
+	-fx-font-weight: bold;
+}
+.msgTextArea{
+	-fx-font-size:20;
+}
+.gmsgpane{
+	-fx-background-color: #FFFFFF;
+	-fx-background-radius: 10;
+}
+.msgname{
+	-fx-text-fill: red;
+	-fx-font-size:12;
+	-fx-font-weight: bold;
+}
+.cmsgname{
+	-fx-text-fill: purple;
+	-fx-font-size:12;
+	-fx-font-weight: bold;
+}
+.msg{
+	-fx-text-fill: #000000;
+	-fx-font-size:14;
+}
+.msgDate{
+	-fx-text-fill: #989898;
+	-fx-font-size:12;
+	
+}
+.stdname{
+	-fx-text-fill: #000000;
+	-fx-font-size:16;
+	-fx-font-weight: bold;
+}
+.username{
+	-fx-text-fill: #000000;
+	-fx-font-size:12;
+	-fx-font-family:Sansita;
+}
+.stdlistback{
+	-fx-background-color: #FFFFFF;
+	-fx-border-color: #000000;
+	-fx-border-width: 1;
+}
+.stdlist{
+	-fx-background-color: #FFFFFF;
+	-fx-border-color: #000000;
+	-fx-border-width: 1;
+	-fx-cursor: hand ;
+}
+.hnae{
+	-fx-text-fill: black;
+	-fx-font-size:20;
+	-fx-font-family:Arial;
+}
+.abstract{
+	-fx-text-fill: black;
+	-fx-font-size:12;
+	-fx-font-family:Arial;
+	-fx-font-weight: bold;
+}
+.pby{
+	-fx-text-fill: black;
+	-fx-font-size:14;
+	-fx-font-family:Arial;
+	-fx-font-weight: bold;
+}
+.mber{
+	-fx-text-fill: black;
+	-fx-font-size:14;
+	-fx-font-family:Arial;
+}

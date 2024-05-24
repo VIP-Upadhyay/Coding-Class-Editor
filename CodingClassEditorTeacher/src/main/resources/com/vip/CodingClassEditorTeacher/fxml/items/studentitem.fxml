@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane prefHeight="35.0" styleClass="stdpane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vip.CodingClassEditorTeacher.StudentListController">
+   <children>
+      <Label fx:id="srNo" layoutX="14.0" layoutY="4.0" styleClass="stdtdata" text="1" />
+      <Label fx:id="studentName" layoutX="166.0" layoutY="4.0" styleClass="stdtdata" text="Student Name" />
+      <Label fx:id="rollNo" layoutX="1030.0" layoutY="4.0" styleClass="stdtdata" text="A1" />
+      <Label fx:id="username" layoutX="1173.0" layoutY="4.0" styleClass="stdtdata" text="Username" />
+   </children>
+</Pane>

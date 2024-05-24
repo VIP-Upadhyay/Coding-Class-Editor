@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="homepane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vip.CodingClassEditorTeacher.HomeScreenController">
+   <children>
+      <ScrollPane fx:id="scrlPane" hbarPolicy="NEVER" styleClass="scroll-cont" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane styleClass="transparent">
+               <children>
+                  <Label fx:id="sbj" layoutX="103.0" layoutY="10.0" styleClass="headslab" text="Subjects" />
+                  <VBox fx:id="vsubbox" layoutX="80.0" layoutY="50.0" prefWidth="683.0" styleClass="vitem" />
+                  <JFXButton fx:id="addClass" layoutX="622.0" layoutY="10.0" onAction="#onAddClass" text="ADD">
+                     <styleClass>
+                        <String fx:value="fonts-A" />
+                        <String fx:value="button-C" />
+                     </styleClass>
+                  </JFXButton>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <Pane fx:id="imgSliderPane" layoutX="750.0" layoutY="50.0" prefHeight="557.0" prefWidth="587.0" styleClass="img-background" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ImageView fx:id="imgView" fitHeight="455.0" fitWidth="469.0" layoutX="63.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

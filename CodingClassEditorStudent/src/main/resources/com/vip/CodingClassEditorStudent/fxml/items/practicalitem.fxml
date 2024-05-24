@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane prefWidth="1294.0" styleClass="stdpane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vip.CodingClassEditorStudent.PracticalListController">
+   <children>
+      <Label fx:id="srNo" layoutX="14.0" layoutY="8.0" prefWidth="58.0" styleClass="stdtdata" text="1" />
+      <Label fx:id="practicalName" layoutX="91.0" layoutY="8.0" prefWidth="798.0" styleClass="stdtdata" text="Practical Name" />
+      <Label fx:id="practicalDate" layoutX="958.0" layoutY="8.0" prefWidth="99.0" styleClass="stdtdata" text="22/05/2022" />
+      <Label fx:id="time" layoutX="1085.0" layoutY="8.0" prefWidth="80.0" styleClass="stdtdata" text="1:30 min" />
+      <JFXButton fx:id="popenbtn" layoutX="1197.0" layoutY="7.0" prefHeight="14.0" prefWidth="80.0" text="OPEN">
+         <styleClass>
+            <String fx:value="pbtno" />
+            <String fx:value="fonts-A" />
+            <String fx:value="button-B" />
+         </styleClass>
+      </JFXButton>
+   </children>
+</Pane>
